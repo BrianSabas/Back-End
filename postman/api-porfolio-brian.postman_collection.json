@@ -1,0 +1,1123 @@
+{
+	"info": {
+		"_postman_id": "e913c660-5fae-4c67-9faa-02210bd6012f",
+		"name": "api-porfolio-brian",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Person",
+			"item": [
+				{
+					"name": "Register Person",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"adminoss@gmail.com\",\r\n    \"password\": \"test12346789\",\r\n    \"name\": \"Brian\",\r\n    \"surname\": \"Argento\",\r\n    \"tel\": \"343543535\",\r\n    \"aboutMe\": \"Me gusta programar y pasear\",\r\n    \"email\": \"brian@gmail.com\",\r\n    \"localidad\": \"Argentina\",\r\n    \"address\": \"Independencia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Person OnRender",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin@gmail.com\",\r\n    \"password\": \"test12346789\",\r\n    \"name\": \"Brians\",\r\n    \"surname\": \"Argentos\",\r\n    \"tel\": \"343543535\",\r\n    \"aboutMe\": \"Me gusta programar y pasear\",\r\n    \"email\": \"brian@gmail.com\",\r\n    \"localidad\": \"Argentina\",\r\n    \"address\": \"Independencia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://porfolio-dzs9.onrender.com/auth/register",
+							"protocol": "https",
+							"host": [
+								"porfolio-dzs9",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Person RailWay",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNzE3MTA0LCJpYXQiOjE2NzI2OTkxMDR9._Cu7MC6yEKQRN8HBkfAs05od4OG_7R8eYCxkt-TcZO5RN3pbQLedniF6mkjkYX5sKax-jN73Z8bZQLNVLgMbvg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"adminod@gmail.com\",\r\n    \"password\": \"test12346789\",\r\n    \"name\": \"Brian\",\r\n    \"surname\": \"Argento\",\r\n    \"tel\": \"343543535\",\r\n    \"aboutMe\": \"Me gusta programar y pasear\",\r\n    \"email\": \"brian@gmail.com\",\r\n    \"localidad\": \"Argentina\",\r\n    \"address\": \"Independencia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api-porfolio-brian-production.up.railway.app/auth/register",
+							"protocol": "https",
+							"host": [
+								"api-porfolio-brian-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Person",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNzAyOTczLCJpYXQiOjE2NzI2ODQ5NzN9.jUzzlmTvNOpPhWr_PVoH-WuCXGUZZ9KSIXAonGmBiW_PX1HAQ8bRXg_mUr0FCqxhKBVE7okHSx0kBUgNPUh7hQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Brian\",\r\n    \"surname\": \"Marin\",\r\n    \"tel\": \"113456789\",\r\n    \"aboutMe\": \"Le gusta programar y pasear\",\r\n    \"email\": \"brian@gmail.com\",\r\n    \"localidad\": \"Puerto Madero\",\r\n    \"address\": \"Buenos Aires\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/person/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"person",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admino@gmail.com\",\r\n    \"password\": \"test12346789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login OnRender",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admino@gmail.com\",\r\n    \"password\": \"test12346789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://porfolio-dzs9.onrender.com/auth/login",
+							"protocol": "https",
+							"host": [
+								"porfolio-dzs9",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Person",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbnNzQGdtYWlsLmNvbSIsImV4cCI6MTY3MjU0MjY3MSwiaWF0IjoxNjcyNTI0NjcxfQ.es2CyUr0gJf8Ahik9u4SUwIRQweEa7MshJkQK3aBtYWuAsLmylbYQ5NfCu9LEbevZqCPR3Q17cu7UQTeICuxOw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/person/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"person",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Person",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbnNzQGdtYWlsLmNvbSIsImV4cCI6MTY3MjU0MjY3MSwiaWF0IjoxNjcyNTI0NjcxfQ.es2CyUr0gJf8Ahik9u4SUwIRQweEa7MshJkQK3aBtYWuAsLmylbYQ5NfCu9LEbevZqCPR3Q17cu7UQTeICuxOw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/person/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"person",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Education",
+			"item": [
+				{
+					"name": "Add Education",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjg5MzEwLCJpYXQiOjE2NzI2NzEzMTB9.SUVSHFZDmpE5T6gwVFFMqK7KOpiNG2DS6XOq3u4FG1gNOYJBn_28C8pIZ3bainLdibaxYXE-iHspvVc-0srBkA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"careerFinished\": \"2018\",\r\n    \"careerName\": \"Ing. Software\",\r\n    \"highSchoolFinished\": \"2017\",\r\n    \"highSchoolName\": \"Dr. Balseiro\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/education/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"education",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Education",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjgyMzc2LCJpYXQiOjE2NzI2NjQzNzZ9.Y3NbdpAlaMk1udmJQyPhFDdMBr2u0us6fF9Vk6YAevtG5TRFBSYMoHxCDTiS40TDL7Ld06TvtWjV9jlqW2wrfA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"careerFinished\": \"2031\",\r\n    \"careerName\": \"Ing. Informatic\",\r\n    \"highSchoolFinished\": \"2021\",\r\n    \"highSchoolName\": \"Dr. Troneiro\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/education/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"education",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Education",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjg5MzEwLCJpYXQiOjE2NzI2NzEzMTB9.SUVSHFZDmpE5T6gwVFFMqK7KOpiNG2DS6XOq3u4FG1gNOYJBn_28C8pIZ3bainLdibaxYXE-iHspvVc-0srBkA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/education/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"education",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read All Educations",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjgyMzc2LCJpYXQiOjE2NzI2NjQzNzZ9.Y3NbdpAlaMk1udmJQyPhFDdMBr2u0us6fF9Vk6YAevtG5TRFBSYMoHxCDTiS40TDL7Ld06TvtWjV9jlqW2wrfA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/education/all/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"education",
+								"all",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Education",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbnNzQGdtYWlsLmNvbSIsImV4cCI6MTY3MjY4MDE3MywiaWF0IjoxNjcyNjYyMTczfQ.PFAgN0m0OAz_UMisgLU0KsrdJl0mUDa8n7OGJwlA4p2VGfkcyTKi3VuRlRLaiUwdjT6TbbjnIn-1-wok7Ml7vg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/education/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"education",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "Add Project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjg5NTE3LCJpYXQiOjE2NzI2NzE1MTd9.Iosh5_N3yELstrAy9UeltvEYiQSAWvdKgatEv5lA6nkUFzkAePKCcZchLr-YgK73S4tzAmGIHpDaUT1SPSGiZQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"projectName\": \"Rebol\",\r\n    \"aboutProject\": \"Proyecto con PHP y JQuery\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/project/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"project",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjk0NjM2LCJpYXQiOjE2NzI2NzY2MzZ9.mj5pswHzetPWuRkvh3_HrFu3p1FVUUTbJ3AVuCXz77tPimQybhe0DVlFC6avoJbFnSLW_OwZdW0-2IgF1sv_gQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"projectName\": \"Lorem\",\r\n    \"aboutProject\": \"Proyecto Web con Spring Boot y Angular\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/project/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"project",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Project",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjk0NjM2LCJpYXQiOjE2NzI2NzY2MzZ9.mj5pswHzetPWuRkvh3_HrFu3p1FVUUTbJ3AVuCXz77tPimQybhe0DVlFC6avoJbFnSLW_OwZdW0-2IgF1sv_gQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/project/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"project",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read All Projects",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjk0NjM2LCJpYXQiOjE2NzI2NzY2MzZ9.mj5pswHzetPWuRkvh3_HrFu3p1FVUUTbJ3AVuCXz77tPimQybhe0DVlFC6avoJbFnSLW_OwZdW0-2IgF1sv_gQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/project/all/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"project",
+								"all",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/project/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"project",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Experiences",
+			"item": [
+				{
+					"name": "Add Experience",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjg4MTg1LCJpYXQiOjE2NzI2NzAxODV9.m_86DxxERNW4KuHYpfvq8UwE1eggTVfTcbzn8bz-Nuzmsfu49enxK_tDLLHH9Cs0UhefMWOnV4jFt1FPbaVakA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreEmpresa\":\"Corporation Capsula\",\r\n    \"trabajoActual\":\"Developer\",\r\n    \"fechaInicio\":\"12/08/20\",\r\n    \"fechaFin\":\"13/05/2021\",\r\n    \"descripcion\":\"Lalal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/experience/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"experience",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Experience",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjg4MTg1LCJpYXQiOjE2NzI2NzAxODV9.m_86DxxERNW4KuHYpfvq8UwE1eggTVfTcbzn8bz-Nuzmsfu49enxK_tDLLHH9Cs0UhefMWOnV4jFt1FPbaVakA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreEmpresa\": \"Corporation Umbrella\",\r\n    \"trabajoActual\": \"Developer\",\r\n    \"fechaInicio\": \"12/08/20\",\r\n    \"fechaFin\": \"13/05/2021\",\r\n    \"descripcion\": \"Lalal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/experience/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"experience",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Experience",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjg4MTg1LCJpYXQiOjE2NzI2NzAxODV9.m_86DxxERNW4KuHYpfvq8UwE1eggTVfTcbzn8bz-Nuzmsfu49enxK_tDLLHH9Cs0UhefMWOnV4jFt1FPbaVakA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/experience/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"experience",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read All Experiences",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjg4MTg1LCJpYXQiOjE2NzI2NzAxODV9.m_86DxxERNW4KuHYpfvq8UwE1eggTVfTcbzn8bz-Nuzmsfu49enxK_tDLLHH9Cs0UhefMWOnV4jFt1FPbaVakA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/experience/all/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"experience",
+								"all",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Experience",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/experience/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"experience",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Technologies",
+			"item": [
+				{
+					"name": "Add Technologie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjk0NjM2LCJpYXQiOjE2NzI2NzY2MzZ9.mj5pswHzetPWuRkvh3_HrFu3p1FVUUTbJ3AVuCXz77tPimQybhe0DVlFC6avoJbFnSLW_OwZdW0-2IgF1sv_gQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Rubby\",\r\n    \"porcentaje\": \"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/technology/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"technology",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Technology",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjk5MDM2LCJpYXQiOjE2NzI2ODEwMzZ9.LHEBXVboyXJGlA41Mn3YUVCcsj69XHyURRHiJ1_5quUq2Bw0F6GRFjX3KhzF-IhlhoQH-KEEI3szoO_RtVS80g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Phyton\",\r\n    \"porcentaje\": \"65\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/technology/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"technology",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Technology",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjk3NzY3LCJpYXQiOjE2NzI2Nzk3Njd9.fs3P-KJxRmqVN3otxrT9c6yqxkWCxSXEElAYs-5LJurP82Y11NuQ-xA1Wr90DxLrJOsmzbFXpm74z170Azp4Fw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/technology/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"technology",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read All Technologies",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjk3NzY3LCJpYXQiOjE2NzI2Nzk3Njd9.fs3P-KJxRmqVN3otxrT9c6yqxkWCxSXEElAYs-5LJurP82Y11NuQ-xA1Wr90DxLrJOsmzbFXpm74z170Azp4Fw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/technology/all/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"technology",
+								"all",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Technologie",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbm9AZ21haWwuY29tIiwiZXhwIjoxNjcyNjk5MDM2LCJpYXQiOjE2NzI2ODEwMzZ9.LHEBXVboyXJGlA41Mn3YUVCcsj69XHyURRHiJ1_5quUq2Bw0F6GRFjX3KhzF-IhlhoQH-KEEI3szoO_RtVS80g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/technology/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"technology",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
