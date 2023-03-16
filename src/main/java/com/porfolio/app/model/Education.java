@@ -26,8 +26,10 @@ public class Education extends BaseEntity implements Serializable {
     private static final long serialVersionUID = 324324324322L;
     
     private String careerFinished;
-	private String careerName;
+    private String careerName;  
     private String highSchoolFinished;
+    private String dateStarted;
+    private String dateFinished;
     private String highSchoolName;
     
     @ManyToOne (fetch = FetchType.LAZY)

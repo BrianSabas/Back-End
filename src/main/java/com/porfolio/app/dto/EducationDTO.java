@@ -16,8 +16,6 @@ public class EducationDTO {
 	private Long id;
 	private String careerFinished;
 	private String careerName;
-	
-	
 	private String highSchoolFinished;
 	
     @NotNull(message = "El campo Institución no puede ser nulo")

@@ -21,6 +21,7 @@ import com.porfolio.app.model.Education;
 import com.porfolio.app.model.Person;
 import com.porfolio.app.service.education.IEducationService;
 import com.porfolio.app.service.person.IPersonService;
+import javax.transaction.Transactional;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
@@ -126,7 +127,8 @@ public class EducationController {
 
 		return response;
 	}
-
+        
+        @Transactional
 	@DeleteMapping("/{id}")
 	public void deleteEducation(@PathVariable(required = true, name = "id") long id) {
 		EducationSvc.deleteEducation(id);

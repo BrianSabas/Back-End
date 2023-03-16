@@ -14,6 +14,7 @@ import com.porfolio.app.dto.PersonDTO;
 import com.porfolio.app.model.Domicile;
 import com.porfolio.app.model.Person;
 import com.porfolio.app.service.person.IPersonService;
+import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
@@ -23,6 +24,10 @@ public class PersonController {
 	@Autowired
 	private IPersonService PersonSvc;
 
+        @GetMapping("/all")
+        public List<Person> getAllPersons() {
+            return PersonSvc.getPersons();
+}
 	@GetMapping("/{userId}")
 	public PersonDTO getPerson(@PathVariable(required = true, name = "userId") String id) {
 		// Obtener los datos del usuario
@@ -44,7 +49,6 @@ public class PersonController {
 			return new PersonDTO();
 		}
 	};
-
 	@PutMapping("/{userId}")
 	public PersonDTO editPerson(@PathVariable(required = true, name = "userId") String id,
 			@Validated @RequestBody PersonDTO request) {

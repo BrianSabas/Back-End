@@ -5,6 +5,7 @@ com\porfolio\app\repository\UserRepository.class
 com\porfolio\app\exception\UserAlreadyExistAuthenticationException.class
 com\porfolio\app\repository\ProjectsRepository.class
 com\porfolio\app\configuration\SwaggerConfig.class
+com\porfolio\app\ApiPorfolioBrianApplication$1.class
 com\porfolio\app\controller\HomeController.class
 com\porfolio\app\controller\UserController.class
 com\porfolio\app\service\explaboral\IExpLaboralService.class
