@@ -1,5 +1,5 @@
-#FROM amazoncorretto:11-alpine-jdk
-FROM amazoncorretto:19
+FROM amazoncorretto:11-alpine-jdk
+#FROM amazoncorretto:19
 
 LABEL MAINTEINER="briansabas"
 
