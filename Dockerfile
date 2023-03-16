@@ -3,7 +3,7 @@ FROM amazoncorretto:19
 
 LABEL MAINTEINER="briansabas"
 
-COPY ./target/api-porfolio-brian-1.0.0.jar api-porfolio-brian-1.0.0.jar
+COPY /target/api-porfolio-brian-1.0.0.jar api-porfolio-brian-1.0.0.jar
 
 ENTRYPOINT ["java","-jar","/api-porfolio-brian-1.0.0.jar"]
 
