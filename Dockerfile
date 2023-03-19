@@ -3,7 +3,7 @@ FROM amazoncorretto:11-alpine-jdk
 
 LABEL MAINTAINER="briansabas"
 
-COPY  ./target/api-porfolio-brian-1.0.0.jar api-porfolio-brian-1.0.0.jar
+COPY  ./target/api-porfolio-brian-1.0.0.jar  api-porfolio-brian-1.0.0.jar
 
 ENTRYPOINT ["java","-jar","/api-porfolio-brian-1.0.0.jar"]
 
