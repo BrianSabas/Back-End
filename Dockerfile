@@ -1,7 +1,7 @@
 FROM amazoncorretto:11-alpine-jdk
 #FROM amazoncorretto:19
 
-MAINTAINER="briansabas"
+LABEL MAINTAINER="briansabas"
 
 COPY  ./target/api-porfolio-brian-1.0.0.jar api-porfolio-brian-1.0.0.jar
 
