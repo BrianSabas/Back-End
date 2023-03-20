@@ -1,9 +1,11 @@
 FROM amazoncorretto:11-alpine-jdk
 #FROM amazoncorretto:19
 
+VOLUME /tmp
+
 LABEL MAINTAINER="briansabas"
 
-COPY  ./target/api-porfolio-brian-1.0.0.jar  api-porfolio-brian-1.0.0.jar
+ADD ./target/api-porfolio-brian-1.0.0.jar  api-porfolio-brian-1.0.0.jar
 
 ENTRYPOINT ["java","-jar","/api-porfolio-brian-1.0.0.jar"]
 
